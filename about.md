@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Securitaus.org is a failed attempt at a security blog to give back to the community. The technical writtings contained
+in this blog should not be taken likely and should be presumed as inaccurate. The author of this site wishes to appologize
+in advance for the poor content that will be displayed. If anything reading this blog has taken precious time away from 
+your life that you will never get back.
