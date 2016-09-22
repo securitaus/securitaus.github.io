@@ -8,7 +8,7 @@ categories: netcat, pentest
 
 All credit for putting together this cheat sheet goes to Ed Skoudis and [SANS][sans-link]
 
-### Fundamentals
+## Fundamentals
 
 #### Netcat client
 {% highlight bash %}
