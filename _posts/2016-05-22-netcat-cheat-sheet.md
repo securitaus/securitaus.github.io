@@ -21,9 +21,9 @@ Connect to an arbitrary port [port] at IP Address [TargetIPaddr]
 nc -l -p [LocalPort]
 {% endhighlight %}
 Create a Netcat listener on arbitrary local port [LocalPort]
-<br>
+&nbsp;
 ---
-<br>
+
 ### File Transfer
 
 #### Push a file from client to listener
