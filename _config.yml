@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: securitaus.org: a failed attempt at a security blog
+title: a failed attempt at a security blog
 email: securitaus@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Securitaus.org is a failed attempt at a security blog. Any articles 
