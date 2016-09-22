@@ -4,9 +4,9 @@ title: "Netcat Cheat Sheet"
 date: 2016-05-22 22:12:33 -0700
 categories: netcat, pentest
 ---
-[Netcat!][netcat-link] is considered to be the TCP/IP swiss army knife and is capable of writing data across the network. Its ability to create a connection to almost anything makes it an easy to use utility that is part of any infosec professionals toolbox. This cheat sheet provides tips and tricks for Netcat on both Linux and Unix.
+[Netcat][netcat-link] is considered to be the TCP/IP swiss army knife and is capable of writing data across the network. Its ability to create a connection to almost anything makes it an easy to use utility that is part of any infosec professionals toolbox. This cheat sheet provides tips and tricks for Netcat on both Linux and Unix.
 
-All credit for putting together this cheat sheet goes to Ed Skoudis and [SANS!][sans-link]
+All credit for putting together this cheat sheet goes to Ed Skoudis and [SANS][sans-link]
 
 ### Fundamentals
 #### Netcat client
