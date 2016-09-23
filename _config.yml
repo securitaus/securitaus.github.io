@@ -5,7 +5,7 @@ url: "https://www.securitaus.org" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Securitaus.org
+  title: securitaus.org
   avatar: 
   gravatar: # Email MD5 hash
   description: "Securitaus.org is a failed attempt at a security blog. Any articles found on this site should not be taken likely and should be presumed inaccurate." # used by search engines
