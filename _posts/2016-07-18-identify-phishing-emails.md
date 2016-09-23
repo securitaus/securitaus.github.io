@@ -2,8 +2,8 @@
 layout: post
 title: "Identify \"phishing\" Emails"
 categories: [phishing, email, fraud]
-feature-img: "img/identify_phishing_email.jpg"
 ---
+![Identify "phishing" Emails]({{ site.url }}/img/identify_phishing_email.jpg)
 
 "Phishing" refers to fraudulent attempts to obtain sensitive information, such as account 
 passwords or banking and credit card information. At first glance, these emails look like they 
