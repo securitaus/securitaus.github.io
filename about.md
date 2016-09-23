@@ -5,8 +5,8 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
-
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
-
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Securitaus.org is a failed attempt at a security blog and a poor way to give back to the security 
+community. All information and technical writings posted on this blog should not be taken likely 
+and therefore should be considered inaccurate. The site owner apologizes in advance for the 
+terrible content posted. Anyone viewing this blog has wasted precious time from their lives that
+can never be returned.
