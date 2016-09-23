@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Released Privacy Tool"
+title: "Google Released a Privacy Tool"
 date:  2016-07-18 22:29:47 -0700
 categories: [privacy, Goolge]
-feature-img: "{{ site.url}}/img/google_released_privacy_tool.jpg"
 ---
+![Google Released a Privacy Tool]({{ site.url }}/img/google_released_privacy_tool.jpg)
+
 Everything you do through products such as Gmail, YouTube, Google search, and many other 
 products, Google collects data and builds a personal profile on things you like, do, or think. 
 This data is collected to send targeted ads to you based on your profile.
