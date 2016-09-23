@@ -2,7 +2,7 @@
 layout: post
 title: "Identify \"phishing\" Emails"
 categories: [phishing, email, fraud]
-featured-img: "{{site.url}}/img/identify_phishing_email.jpg"
+feature-img: "{{site.url}}/img/identify_phishing_email.jpg"
 ---
 
 "Phishing" refers to fraudulent attempts to obtain sensitive information, such as account 
