@@ -9,14 +9,14 @@ When testing new software, distros, or hacking the occasional [VulnHub](vulnhub)
 (OSX) will suffice. However, when something more permanent is needed, there is ESXi. [VMware’s ESXi](esxi), in my opinion, is a more 
 mature and easier to configure hypervisor than its counterparts and is the reason I used it in this build.
 
-###Requirements
+### Requirements
 
 I had a few requirements when researching this build, 1) keep the cost under $1500.00, 2) make sure power consumption is low. I 
 live in an area where power is expensive, so with a server running 24/7 a high power draw machine would get expensive quickly, 
 3) I needed something quiet, as the new server was going in my office. Finally, 4) I wanted a small form factor, so it could 
 travel easier and potentially be used as a portable CTF server.
 
-###Components
+### Components
 
 Motherboard - [ASRock C2750D4I](asrock) Intel Avoton C2750 ([$457.94](motherboard))
 This board is supported by ESXi and includes a 2.4GHz Octa-Core processor, dual Intel i210 gigabit LAN ports, and a dedicated 
@@ -48,7 +48,7 @@ attach the fan, I used the rubber pins that came in the box and pushed them into
 The grand total of my build before taxes was $1053.49, which was several hundred dollars under budget. The savings was due 
 to having SSD’s lying around, otherwise I would have come in on the targeted budget by purchasing one or two.
 
-###ESXi Installation
+### ESXi Installation
 
 Download a copy of ESXi from VMware’s website, after registering, I chose version 6.0. At this point you need two USB flash 
 drives, 1) to make bootable with the ESXi image that was downloaded. I found that using Rufus made this easy. Then, 2) the 
