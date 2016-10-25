@@ -5,8 +5,8 @@ categories: [esxi, whitebox, lab]
 ---
 ![ESXi Whitebox Lab Build]({{ site.url }}/img/esxi-whitebox-lab-build.jpg)
 
-When testing new software, distros, or hacking the occasional [VulnHub](vulnhub) image - VMware Workstation (Windows) or VMware Fusion 
-(OSX) will suffice. However, when something more permanent is needed, there is ESXi. [VMware’s ESXi](esxi), in my opinion, is a more 
+When testing new software, distros, or hacking the occasional [VulnHub][vulnhub] image - VMware Workstation (Windows) or VMware Fusion 
+(OSX) will suffice. However, when something more permanent is needed, there is ESXi. [VMware’s ESXi][esxi], in my opinion, is a more 
 mature and easier to configure hypervisor than its counterparts and is the reason I used it in this build.
 
 ### Requirements
@@ -18,28 +18,28 @@ travel easier and potentially be used as a portable CTF server.
 
 ### Components
 
-**Motherboard** - [ASRock C2750D4I](asrock) Intel Avoton C2750 ([$457.94](motherboard)). This board is supported by ESXi and includes 
+**Motherboard** - [ASRock C2750D4I][asrock] Intel Avoton C2750 ([$457.94][motherboard]). This board is supported by ESXi and includes 
 a 2.4GHz Octa-Core processor, dual Intel i210 gigabit LAN ports, and a dedicated IPMI port for headless install and management. 
 All packed onto a Mini-ITX board.
 
-**RAM** - Crucial 32GB (8GBx4) DDR3/DDR3L-1600MT/s ECC UDIMM Server Memory ([$196.18](ram)). You have to be careful here, use only 
+**RAM** - Crucial 32GB (8GBx4) DDR3/DDR3L-1600MT/s ECC UDIMM Server Memory ([$196.18][ram]). You have to be careful here, use only 
 the RAM that is listed as supported on ASRock website or you might have trouble booting your machine. I opted for two of the 
 16GB kits, as a 64GB kit is extremely expensive.
 
-**Case** - SilverStone Technology Mini-ITX/DTX Small Form Factor NAS Computer Case ([$149.99](case)). I was on the fence about 
+**Case** - SilverStone Technology Mini-ITX/DTX Small Form Factor NAS Computer Case ([$149.99][case]). I was on the fence about 
 ordering this case, but when it arrived I was pleasantly surprised with how SilverStone was able to get eight hot-swappable 
 bays in a compact case and the screened fan intakes are nice.
 
-**Power** - Corsair SF450 SFX Form Factor ([$89.99](power)). The SFX power supply is necessary for the small form factor case, 
+**Power** - Corsair SF450 SFX Form Factor ([$89.99][power]). The SFX power supply is necessary for the small form factor case, 
 a traditional power supply will not fit. SilverStone makes power supply’s as well, but I happen to be a fan of Corsair.
 
-**Storage** - 2x Seagate 2TB Desktop HDD SATA 6Gb/s 64MB Cache 3.5-Inch ([$134.94](storage)). These 2TB drives plus the addition of 
+**Storage** - 2x Seagate 2TB Desktop HDD SATA 6Gb/s 64MB Cache 3.5-Inch ([$134.94][storage]). These 2TB drives plus the addition of 
 a few 120GB SSD’s that I had laying around gave me plenty of room and performance.
 
-**Flash Drive** - 32GB Samsung USB 3.0 ([$10.50](flash-drive)). Install and boot ESXi from USB, so there is no need to use any space 
+**Flash Drive** - 32GB Samsung USB 3.0 ([$10.50][flash-drive]). Install and boot ESXi from USB, so there is no need to use any space 
 on my drives.
 
-**Cooling** - Noctua A-Series Cooling Fan NF-A4x10 FLX ([$13.95](cooling)). This component is totally optional because the processor 
+**Cooling** - Noctua A-Series Cooling Fan NF-A4x10 FLX ([$13.95][cooling]). This component is totally optional because the processor 
 is passively cooled, but found that with this addition, core temperatures dropped by a few degrees. This was also and in-expensive 
 add-on and still allowed me to come under budget. To attach the fan, I used the rubber pins that came in the box and pushed them 
 into processor heatsink.
@@ -60,7 +60,7 @@ installation onto the 32GB flash drive that was plugged into a USB port on the b
 
 During installing and after booting ESXi I noticed version 6.0 did not recognize my SATA controllers, so ESXi could not see 
 my drives. As it turns out VMware removed support for commodity network cards and SATA controllers in version 5.5. 
-Fortunately, thanks to [Andreas Peetz](blog-post) blog post, there is a way to add support by running the below commands in 
+Fortunately, thanks to [Andreas Peetz][blog-post] blog post, there is a way to add support by running the below commands in 
 and ESXi shell:
 
 {% highlight bash %}
